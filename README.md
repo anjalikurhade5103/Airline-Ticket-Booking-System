@@ -74,27 +74,45 @@ f. searchPassengerByID():
 This method allows users to search for a passenger by providing their unique system-generated ID. It searches for the passenger across all flight queues and displays their details if found.
 
 g. displayPassengerInfo(Passenger passenger):
+
 This sub-method is used to display the information of a found passenger. It prints the passenger's attributes, including name, ID, flight details, seat information, and price.
 
+
 Time Complexity of Methods:
+
 1.bookTicket(Scanner scanner):
+
 Time Complexity: O(1)
+
 The time complexity for booking a ticket is constant because the operations performed (e.g., seat assignment, adding to the queue, and price calculation) do not depend on the number of existing passengers.
 
+
 2.cancelTicket(Scanner scanner):
+
 Time Complexity: O(N)
+
 The time complexity for canceling a ticket is linear, where N is the total number of passengers. The method searches for a specific passenger in each of the four flight queues, and the time complexity depends on the total number of passengers.
 
+
 3.displayAllBookedTickets():
+
 Time Complexity: O(N)
+
 The time complexity for displaying all booked tickets is linear, as it iterates through all passengers across different flights and classes.
 
+
 4.displayBookedTickets(Queue<Passenger> flightQueue):
+
 Time Complexity: O(M), where M is the number of passengers in the given flight queue.
+
 The time complexity for displaying booked tickets for a specific flight queue is linear, as it iterates through the passengers in that queue.
 
+
+
 5.searchPassengerByID():
+
 Time Complexity: O(N)
+
 The time complexity for searching a passenger by their ID is linear because it searches for the passenger in all flight queues, and the time complexity depends on the total number of passengers.
 
 6.displayPassengerInfo(Passenger passenger):
