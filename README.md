@@ -48,18 +48,31 @@ Project Structure:
 
 Helper Methods:
 The class contains several helper methods that perform specific tasks and functionalities:
+
 a. menu():
+
 This method displays a detailed menu that provides information about flight options, destinations, timings, seat availability, and ticket prices. It serves as a guide for users to make informed decisions when booking tickets.
+
 b. bookTicket(Scanner scanner):
+
 This method allows users to book flight tickets. Users provide their details, and the program assigns them a unique ID, seat number, and calculates the ticket price based on the selected flight and seat type (Business or Economy).
+
 c. cancelTicket(Scanner scanner):
+
 Users can cancel a booked ticket by providing their passenger ID. The method searches for the passenger across all flight queues, removes the booking, calculates a refund amount (15% of the ticket price), and adjusts seat counters.
+
 d. displayAllBookedTickets():
+
 This method displays the details of all booked tickets, organized by flight and class. It iterates through all flight queues and passengers to display the information.
+
 e. displayBookedTickets(Queue<Passenger> flightQueue):
+
 A sub-method used to display booked tickets for a specific flight queue (flight and class). It iterates through passengers within the specified queue.
+
 f. searchPassengerByID():
+
 This method allows users to search for a passenger by providing their unique system-generated ID. It searches for the passenger across all flight queues and displays their details if found.
+
 g. displayPassengerInfo(Passenger passenger):
 This sub-method is used to display the information of a found passenger. It prints the passenger's attributes, including name, ID, flight details, seat information, and price.
 
