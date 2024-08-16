@@ -1,10 +1,12 @@
 # Airline-Ticket-Booking-System
 
 Project Details:
+
 The provided Java program, "AirlineTicketSystem," is an Airline Reservation System that allows users to book, display, search, and cancel flight tickets for different airline routes. The program maintains passenger information, such as name, ID, flight type, destination, flight timing, seat type, seat number, and price. It uses queues to manage passenger bookings for four different airline routes and two seat classes: Business and Economy.
 
 
 Key Features:
+
 1.Booking Tickets:
 The program allows users to book flight tickets by entering their details, including name, flight name, and seat type (Business or Economy).
 Depending on the selected flight and seat type, the program assigns a seat number and calculates the ticket price.
@@ -30,7 +32,9 @@ It tracks seat availability and assigns seat numbers based on the selected fligh
 
 
 Data Structures Used:
+
 Queue<Passenger>:
+
 The Queue data structure is a linear collection of elements that follows the First-In-First-Out (FIFO) principle. In Java, it is part of the Java Collections Framework.
 In the program, there are four different Queue<Passenger> instances, each representing a specific flight route and its associated passenger bookings. These queues are:
 mumbaiBangaloreFlights: Queue for passengers on the Mumbai-Bangalore route.
@@ -41,6 +45,7 @@ These queues are used to store Passenger objects for each flight route and seat 
 
 
 Project Structure:
+
 Helper Methods:
 The class contains several helper methods that perform specific tasks and functionalities:
 a. menu():
